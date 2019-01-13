@@ -1,4 +1,4 @@
---------------------------------------------- MATHIEU Thomas
+---------------------------------------------------------------------                 MATHIEU Thomas
 
 -> Penser à changer l'emplacement du fichier de mot pour la création de la base de données.
 
