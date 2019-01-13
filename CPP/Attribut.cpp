@@ -5,6 +5,7 @@
  *      Author: Thomas
  */
 #include "../H/Attribut.h"
+#include "../CPP/Dictionnaire.cpp"
 #include <vector>
 #include <cstring>
 #include <algorithm>
@@ -76,7 +77,6 @@ string Attribut::enleverLettre(string m, int t, int indice)
  */
 string Attribut::find(string m, int t)
 {
-	cout << m << endl ;
 	if(this->d.rechercher(this->d.getMap(t-1), m))
 	{
 		cout << "Le mot le plus long avec ces lettres est : " << m << endl ;
@@ -97,6 +97,7 @@ string Attribut::find(string m, int t)
 			}
 		}
 	}
+	
 	string tmp = "Pas de mot trouvé" ;
 	return (char*)tmp.c_str() ;
 }

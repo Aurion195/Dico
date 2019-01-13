@@ -1,8 +1,10 @@
-#include "H/Attribut.h"
+#include "CPP/Attribut.cpp"
+#include <iostream>
+#include <cstring>
 
-int main()
+int main(int argc, char* argv[])
 {
-	Attribut a("ybxrtu",6) ;
+	Attribut a(argv[1],strlen(argv[1])) ;
 
 	return 0 ;
 }

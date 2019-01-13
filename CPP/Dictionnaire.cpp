@@ -62,10 +62,11 @@ void Dictionnaire::createTable()
 {
 	fstream fichier ;
 	//le chemin ou se trouve mon dico, faudra penser à le modifier
-	fichier.open("C:\\Users\\Thomas\\Desktop\\Jeux java\\test\\src\\Ressources\\dico.mots", ios::in) ;
+	fichier.open("C:\\Users\\Thomas\\Desktop\\Jeux java\\Dico\\Ressources\\dico.mots", ios::in) ;
 
 	if(fichier)
 	{
+		cout << "Création des maps !!! " << endl ;
 		string tmp = "" ;
 		while(!fichier.eof())
 		{
@@ -78,7 +79,6 @@ void Dictionnaire::createTable()
 		}
 
 		fichier.close() ;
-		//this->display() ;
 	}
 	else
 	{
